@@ -1,3 +1,133 @@
-<h1>
-  This is an Blog page.
-</h1>
+
+    <style>
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 15px;
+        }
+
+        .blog-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .blog-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Limit to 2 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <h2>Pharmaceutics Blogs</h2>
+    <div class="blog-container">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+            <img src="#" alt="Blog 1 Image" class="blog-image">
+            <div class="blog-content">
+                <h3 class="blog-title">Understanding Drug Delivery Systems</h3>
+                <p class="blog-description">Explore the latest advancements in drug delivery systems and how they are transforming the pharmaceutical industry.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card">
+            <img src="#" alt="Blog 2 Image" class="blog-image">
+            <div class="blog-content">
+                <h3 class="blog-title">Pharmaceutical Formulations</h3>
+                <p class="blog-description">Discover the science behind pharmaceutical formulations and their impact on drug effectiveness.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-card">
+            <img src="#" alt="Blog 3 Image" class="blog-image">
+            <div class="blog-content">
+                <h3 class="blog-title">Biopharmaceutics Insights</h3>
+                <p class="blog-description">Learn how biopharmaceutics plays a vital role in understanding drug absorption and bioavailability.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog 4 -->
+        <div class="blog-card">
+            <img src="#" alt="Blog 4 Image" class="blog-image">
+            <div class="blog-content">
+                <h3 class="blog-title">Nanotechnology in Pharmaceutics</h3>
+                <p class="blog-description">Explore the fascinating world of nanotechnology and its applications in modern pharmaceutics.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog 5 -->
+        <div class="blog-card">
+            <img src="#" alt="Blog 5 Image" class="blog-image">
+            <div class="blog-content">
+                <h3 class="blog-title">Clinical Trials Explained</h3>
+                <p class="blog-description">Get a behind-the-scenes look at how clinical trials are conducted and their importance in drug development.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog 6 -->
+        <div class="blog-card">
+            <img src="#" alt="Blog 6 Image" class="blog-image">
+            <div class="blog-content">
+                <h3 class="blog-title">Future of Pharmaceutics</h3>
+                <p class="blog-description">Delve into the future trends and technologies that are shaping the field of pharmaceutics.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+
